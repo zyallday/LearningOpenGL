@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		57645D5D291E219C00C2CAD0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57645D5C291E219C00C2CAD0 /* main.cpp */; };
+		57645D64291E229C00C2CAD0 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 57645D63291E229C00C2CAD0 /* glad.c */; };
+		57645D67291E22D100C2CAD0 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57645D66291E22D100C2CAD0 /* libglfw3.a */; };
+		57645D69291E22E800C2CAD0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57645D68291E22E800C2CAD0 /* OpenGL.framework */; };
+		57645D6B291E22EE00C2CAD0 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57645D6A291E22EE00C2CAD0 /* GLUT.framework */; };
+		57645D6D291E22F400C2CAD0 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57645D6C291E22F400C2CAD0 /* IOKit.framework */; };
+		57645D6F291E22FB00C2CAD0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57645D6E291E22FB00C2CAD0 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +31,12 @@
 /* Begin PBXFileReference section */
 		57645D59291E219C00C2CAD0 /* LearningOpenGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LearningOpenGL; sourceTree = BUILT_PRODUCTS_DIR; };
 		57645D5C291E219C00C2CAD0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		57645D63291E229C00C2CAD0 /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glad.c; path = glad/src/glad.c; sourceTree = SOURCE_ROOT; };
+		57645D66291E22D100C2CAD0 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = "glfw-3.3.8.bin.MACOS/lib-universal/libglfw3.a"; sourceTree = "<group>"; };
+		57645D68291E22E800C2CAD0 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		57645D6A291E22EE00C2CAD0 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		57645D6C291E22F400C2CAD0 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		57645D6E291E22FB00C2CAD0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +44,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57645D6F291E22FB00C2CAD0 /* Cocoa.framework in Frameworks */,
+				57645D6D291E22F400C2CAD0 /* IOKit.framework in Frameworks */,
+				57645D6B291E22EE00C2CAD0 /* GLUT.framework in Frameworks */,
+				57645D69291E22E800C2CAD0 /* OpenGL.framework in Frameworks */,
+				57645D67291E22D100C2CAD0 /* libglfw3.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +60,7 @@
 			children = (
 				57645D5B291E219C00C2CAD0 /* LearningOpenGL */,
 				57645D5A291E219C00C2CAD0 /* Products */,
+				57645D65291E22D100C2CAD0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +76,21 @@
 			isa = PBXGroup;
 			children = (
 				57645D5C291E219C00C2CAD0 /* main.cpp */,
+				57645D63291E229C00C2CAD0 /* glad.c */,
 			);
 			path = LearningOpenGL;
+			sourceTree = "<group>";
+		};
+		57645D65291E22D100C2CAD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				57645D6E291E22FB00C2CAD0 /* Cocoa.framework */,
+				57645D6C291E22F400C2CAD0 /* IOKit.framework */,
+				57645D6A291E22EE00C2CAD0 /* GLUT.framework */,
+				57645D68291E22E800C2CAD0 /* OpenGL.framework */,
+				57645D66291E22D100C2CAD0 /* libglfw3.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57645D5D291E219C00C2CAD0 /* main.cpp in Sources */,
+				57645D64291E229C00C2CAD0 /* glad.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,9 +270,18 @@
 		57645D61291E219C00C2CAD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6X2BFL6896;
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = (
+					/Users/lostjobs/Documents/TestiOS/CppProject/LearningOpenGL/glad/include,
+					"/Users/lostjobs/Documents/TestiOS/CppProject/LearningOpenGL/glfw-3.3.8.bin.MACOS/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/glfw-3.3.8.bin.MACOS/lib-universal",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -248,9 +289,18 @@
 		57645D62291E219C00C2CAD0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6X2BFL6896;
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = (
+					/Users/lostjobs/Documents/TestiOS/CppProject/LearningOpenGL/glad/include,
+					"/Users/lostjobs/Documents/TestiOS/CppProject/LearningOpenGL/glfw-3.3.8.bin.MACOS/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/glfw-3.3.8.bin.MACOS/lib-universal",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
