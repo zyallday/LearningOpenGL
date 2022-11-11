@@ -11,9 +11,8 @@
 		57645D64291E229C00C2CAD0 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 57645D63291E229C00C2CAD0 /* glad.c */; };
 		57645D67291E22D100C2CAD0 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57645D66291E22D100C2CAD0 /* libglfw3.a */; };
 		57645D69291E22E800C2CAD0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57645D68291E22E800C2CAD0 /* OpenGL.framework */; };
-		57645D6B291E22EE00C2CAD0 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57645D6A291E22EE00C2CAD0 /* GLUT.framework */; };
-		57645D6D291E22F400C2CAD0 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57645D6C291E22F400C2CAD0 /* IOKit.framework */; };
-		57645D6F291E22FB00C2CAD0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57645D6E291E22FB00C2CAD0 /* Cocoa.framework */; };
+		57645D70291E295D00C2CAD0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57645D6E291E22FB00C2CAD0 /* Cocoa.framework */; };
+		57645D71291E296800C2CAD0 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57645D6C291E22F400C2CAD0 /* IOKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,9 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57645D6F291E22FB00C2CAD0 /* Cocoa.framework in Frameworks */,
-				57645D6D291E22F400C2CAD0 /* IOKit.framework in Frameworks */,
-				57645D6B291E22EE00C2CAD0 /* GLUT.framework in Frameworks */,
+				57645D71291E296800C2CAD0 /* IOKit.framework in Frameworks */,
+				57645D70291E295D00C2CAD0 /* Cocoa.framework in Frameworks */,
 				57645D69291E22E800C2CAD0 /* OpenGL.framework in Frameworks */,
 				57645D67291E22D100C2CAD0 /* libglfw3.a in Frameworks */,
 			);

@@ -10,7 +10,14 @@
 #include <GLFW/glfw3.h>
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
+    std::cout << "width, heigth changes, (" << width << "," << height << ")" << std::endl;
     glViewport(0, 0, width, height);
+}
+
+void processInput(GLFWwindow* window) {
+    if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS) {
+        glfwSetWindowShouldClose(window, true);
+    }
 }
 
 int main(int argc, const char * argv[]) {
@@ -20,7 +27,7 @@ int main(int argc, const char * argv[]) {
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
     
-    GLFWwindow* window = glfwCreateWindow(800, 600, "example", NULL, NULL);
+    GLFWwindow* window = glfwCreateWindow(800, 600, "LearnOpenGL", NULL, NULL);
     if (window == NULL)
     {
         std::cout << "Failed to create GLFW window" << std::endl;
@@ -62,7 +69,7 @@ int main(int argc, const char * argv[]) {
     "out vec4 FragColor;\n"
     "void main()\n"
     "{\n"
-    "   FragColor = vec4(1.0f, 0.5f, 0.2f, 1.0f);\n"
+    "   FragColor = vec4(1.0f, 1.0f, 0.5f, 1.0f);\n"
     "}\n\0";
     
     unsigned int fragmentShader;
@@ -97,9 +104,9 @@ int main(int argc, const char * argv[]) {
     glBindVertexArray(VAO);
     
     float vertices[] = {
-        -0.5f, -0.5f, 0.0f,
-        0.5f, -0.5f, 0.0f,
-        0.0f, 0.5f, 0.0f
+        0.0f, 1.0f, -1.0f,
+        -1.0f, -1.0f, 0.0f,
+        1.0f, -1.0f, 0.0f
     };
     
     unsigned int VBO;
@@ -111,13 +118,14 @@ int main(int argc, const char * argv[]) {
     glEnableVertexAttribArray(0);
     
     glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+    glClear(GL_COLOR_BUFFER_BIT);
     
     while(!glfwWindowShouldClose(window))
     {
         glClear(GL_COLOR_BUFFER_BIT);
         
         glDrawArrays(GL_TRIANGLES, 0, 3);
-        
+        processInput(window);
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
