@@ -273,8 +273,8 @@
 				DEVELOPMENT_TEAM = 6X2BFL6896;
 				ENABLE_HARDENED_RUNTIME = YES;
 				HEADER_SEARCH_PATHS = (
-					/Users/lostjobs/Documents/TestiOS/CppProject/LearningOpenGL/glad/include,
-					"/Users/lostjobs/Documents/TestiOS/CppProject/LearningOpenGL/glfw-3.3.8.bin.MACOS/include",
+					"$(PROJECT_DIR)/glad/include",
+					"$(PROJECT_DIR)/glfw-3.3.8.bin.MACOS/include",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -292,8 +292,8 @@
 				DEVELOPMENT_TEAM = 6X2BFL6896;
 				ENABLE_HARDENED_RUNTIME = YES;
 				HEADER_SEARCH_PATHS = (
-					/Users/lostjobs/Documents/TestiOS/CppProject/LearningOpenGL/glad/include,
-					"/Users/lostjobs/Documents/TestiOS/CppProject/LearningOpenGL/glfw-3.3.8.bin.MACOS/include",
+					"$(PROJECT_DIR)/glad/include",
+					"$(PROJECT_DIR)/glfw-3.3.8.bin.MACOS/include",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
