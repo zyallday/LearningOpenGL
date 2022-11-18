@@ -36,6 +36,7 @@
 		57645D6A291E22EE00C2CAD0 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		57645D6C291E22F400C2CAD0 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		57645D6E291E22FB00C2CAD0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		577A88B12926867B0081315A /* shader_s.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shader_s.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +76,7 @@
 			children = (
 				57645D5C291E219C00C2CAD0 /* main.cpp */,
 				57645D63291E229C00C2CAD0 /* glad.c */,
+				577A88B12926867B0081315A /* shader_s.h */,
 			);
 			path = LearningOpenGL;
 			sourceTree = "<group>";
