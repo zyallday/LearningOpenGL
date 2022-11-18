@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5701168B2927353200F7FE76 /* stb_image.h in Sources */ = {isa = PBXBuildFile; fileRef = 5701168A2927353200F7FE76 /* stb_image.h */; };
+		5701168F292757A600F7FE76 /* stb_image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5701168E292757A600F7FE76 /* stb_image.cpp */; };
 		57645D5D291E219C00C2CAD0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57645D5C291E219C00C2CAD0 /* main.cpp */; };
 		57645D64291E229C00C2CAD0 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 57645D63291E229C00C2CAD0 /* glad.c */; };
 		57645D67291E22D100C2CAD0 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57645D66291E22D100C2CAD0 /* libglfw3.a */; };
@@ -28,6 +30,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5701168829272A3600F7FE76 /* base.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = base.vs; sourceTree = "<group>"; };
+		5701168929272A3600F7FE76 /* base.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = base.fs; sourceTree = "<group>"; };
+		5701168A2927353200F7FE76 /* stb_image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
+		5701168D2927361600F7FE76 /* container.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = container.jpg; sourceTree = "<group>"; };
+		5701168E292757A600F7FE76 /* stb_image.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stb_image.cpp; sourceTree = "<group>"; };
 		57645D59291E219C00C2CAD0 /* LearningOpenGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LearningOpenGL; sourceTree = BUILT_PRODUCTS_DIR; };
 		57645D5C291E219C00C2CAD0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		57645D63291E229C00C2CAD0 /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glad.c; path = glad/src/glad.c; sourceTree = SOURCE_ROOT; };
@@ -54,6 +61,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5701168729272A3600F7FE76 /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				5701168829272A3600F7FE76 /* base.vs */,
+				5701168929272A3600F7FE76 /* base.fs */,
+			);
+			path = shaders;
+			sourceTree = "<group>";
+		};
+		5701168C2927361600F7FE76 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				5701168D2927361600F7FE76 /* container.jpg */,
+			);
+			name = images;
+			path = LearningOpenGL/images;
+			sourceTree = SOURCE_ROOT;
+		};
 		57645D50291E219C00C2CAD0 = {
 			isa = PBXGroup;
 			children = (
@@ -74,9 +99,13 @@
 		57645D5B291E219C00C2CAD0 /* LearningOpenGL */ = {
 			isa = PBXGroup;
 			children = (
+				5701168C2927361600F7FE76 /* images */,
+				5701168729272A3600F7FE76 /* shaders */,
 				57645D5C291E219C00C2CAD0 /* main.cpp */,
 				57645D63291E229C00C2CAD0 /* glad.c */,
 				577A88B12926867B0081315A /* shader_s.h */,
+				5701168E292757A600F7FE76 /* stb_image.cpp */,
+				5701168A2927353200F7FE76 /* stb_image.h */,
 			);
 			path = LearningOpenGL;
 			sourceTree = "<group>";
@@ -150,8 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5701168B2927353200F7FE76 /* stb_image.h in Sources */,
 				57645D5D291E219C00C2CAD0 /* main.cpp in Sources */,
 				57645D64291E229C00C2CAD0 /* glad.c in Sources */,
+				5701168F292757A600F7FE76 /* stb_image.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +308,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/glad/include",
 					"$(PROJECT_DIR)/glfw-3.3.8.bin.MACOS/include",
+					"$(PROJECT_DIR)/include",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -296,6 +328,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/glad/include",
 					"$(PROJECT_DIR)/glfw-3.3.8.bin.MACOS/include",
+					"$(PROJECT_DIR)/include",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
