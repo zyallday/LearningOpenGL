@@ -16,6 +16,7 @@
 		57645D70291E295D00C2CAD0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57645D6E291E22FB00C2CAD0 /* Cocoa.framework */; };
 		57645D71291E296800C2CAD0 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57645D6C291E22F400C2CAD0 /* IOKit.framework */; };
 		577A8A60292E6C700081315A /* glm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 577A89A3292E6C700081315A /* glm.cpp */; };
+		57A41920293067C000C0B7C6 /* camera.h in Sources */ = {isa = PBXBuildFile; fileRef = 57A4191F293067C000C0B7C6 /* camera.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -467,6 +468,7 @@
 		577A8A5E292E6C700081315A /* projection.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = projection.inl; sourceTree = "<group>"; };
 		577A8A5F292E6C700081315A /* type_aligned.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_aligned.hpp; sourceTree = "<group>"; };
 		577A8A61292E71030081315A /* awesomeface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awesomeface.png; sourceTree = "<group>"; };
+		57A4191F293067C000C0B7C6 /* camera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = camera.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -528,6 +530,7 @@
 				5701168729272A3600F7FE76 /* shaders */,
 				57645D5C291E219C00C2CAD0 /* main.cpp */,
 				57645D63291E229C00C2CAD0 /* glad.c */,
+				57A4191F293067C000C0B7C6 /* camera.h */,
 				577A88B12926867B0081315A /* shader_s.h */,
 				5701168E292757A600F7FE76 /* stb_image.cpp */,
 				5701168A2927353200F7FE76 /* stb_image.h */,
@@ -1084,6 +1087,7 @@
 				57645D5D291E219C00C2CAD0 /* main.cpp in Sources */,
 				57645D64291E229C00C2CAD0 /* glad.c in Sources */,
 				577A8A60292E6C700081315A /* glm.cpp in Sources */,
+				57A41920293067C000C0B7C6 /* camera.h in Sources */,
 				5701168F292757A600F7FE76 /* stb_image.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
